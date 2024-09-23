@@ -28,13 +28,13 @@ def get_layers():
         },
         'buildings': {'tags': {'building': True}},
         'landuses': {'tags': {'landuse': True}},
-        'naturals': {'tags': {'natural': True, 'leisure': 'nature_reserve'}},
+        # 'naturals': {'tags': {'natural': True, 'leisure': 'nature_reserve'}},
         # 'naturals': {'tags': {'natural': ['wood', 'scrub', 'heath', 'grass', 'grassland', 'beach', 'coastline'], 'leisure': "nature_reserve"}},        
         'boundarys': {'tags': {'boundary': True}},
         'railways': {'tags': {'railway': True}},
         # 'power': {'tags': {'power': True}},
         'waters': {'tags': {'natural': ['water', 'sea', 'river', 'canal', 'pond', 'spring', 'stream','lake']},},
-        'green_spaces': {'tags': {'leisure': True, 'landuse': 'grass', 'natural': True}}
+        'green_spaces': {'tags': {'leisure': True, 'landuse': ['grass', 'natural': ['forest', 'wood', 'island', 'wood', 'scrub', 'grassland', "heath", "wetland", "meadow"}]
         # 'man_made': {'tags': {'man_made': True}},
         # 'tourism': {'tags': {'tourism': True}},
         # 'public_transport': {'tags': {'public_transport': True}},
