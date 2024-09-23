@@ -3,12 +3,13 @@ matplotlib==3.7.1
 prettymaps==0.1.0
 pillow==9.5.0
 numpy==1.24.3
-shapely==2.0.1
-geopandas==0.13.2
+shapely==1.8.5.post1   # Use a version compatible with osmnx
+osmnx==1.1.2           # Pin a compatible version of osmnx
+geopandas==0.9.0       # Known compatible version with shapely and osmnx
 fonttools==4.40.0
 fiona==1.9.4
 pyproj==3.5.0
 rtree==1.0.1
 cachetools==5.3.1
-setuptools>=65.5.0  # setuptools to manage build systems
-wheel>=0.38.4       # wheel to ensure package builds succeed
+setuptools>=65.5.0
+wheel>=0.38.4
