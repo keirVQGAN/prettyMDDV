@@ -34,7 +34,7 @@ def get_layers():
         'railways': {'tags': {'railway': True}},
         # 'power': {'tags': {'power': True}},
         'waters': {'tags': {'natural': ['water', 'sea', 'river', 'canal', 'pond', 'spring', 'stream','lake']},},
-        'green_spaces': {'tags': {'leisure': True, 'landuse': ['grass', 'natural': ['forest', 'wood', 'island', 'wood', 'scrub', 'grassland', "heath", "wetland", "meadow"}]
+        'green_spaces': {'tags': {'leisure': True, 'landuse': ['grass', 'natural': ['forest', 'wood', 'island', 'wood', 'scrub', 'grassland', "heath", "wetland", "meadow"]},},
         # 'man_made': {'tags': {'man_made': True}},
         # 'tourism': {'tags': {'tourism': True}},
         # 'public_transport': {'tags': {'public_transport': True}},
