@@ -1,9 +1,9 @@
 streamlit==1.33.0
 matplotlib==3.8.4
 numpy>=1.20,<1.25
-shapely>=2.0.0
+shapely==1.8.5.post1  # Downgraded version to resolve the TopologicalError issue
 prettymaps==0.1.0
-osmnx==1.0.1  # Must stick to this version due to prettymaps dependency
+osmnx==1.0.1  # Compatible version for prettymaps
 pandas==2.2.2
 pyogrio==0.7.2
 streamlit-image-select==0.6.0
