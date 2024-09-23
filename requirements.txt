@@ -10,3 +10,4 @@ fiona==1.9.4
 pyproj==3.5.0
 rtree==1.0.1
 cachetools==5.3.1
+setuptools==65.5.0  # Added setuptools to resolve distutils issue
