@@ -3,6 +3,13 @@ import io
 import matplotlib.pyplot as plt
 from prettymaps import plot
 from layers_and_styles import get_layers
+from slugify import slugify
+
+
+def slugify_location(location: str) -> str:
+    """Convert a location name into a slug-friendly format."""
+    return slugify(location)
+
 
 def create_pretty_map(location, circle=True, dilate=200, radius=500, style=None, preset=None):
     """
