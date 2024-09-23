@@ -108,7 +108,7 @@ if 'png_buffer' in st.session_state:
         st.download_button(
             label="Download SVG",
             data=svg_buffer,
-            file_name=f"{slugified_location}_radius {radius}m.svg",
+            file_name=f"{slugified_location}_radius_{radius}m.svg",
             mime="image/svg+xml"
         )
     with col2:
@@ -121,6 +121,6 @@ if 'png_buffer' in st.session_state:
         st.download_button(
             label="Download PNG",
             data=png_buffer_download,
-            file_name=f"{slugified_location}_radius {radius}m.png",
+            file_name=f"{slugified_location}_radius_{radius}m.png",
             mime="image/png"
         )
