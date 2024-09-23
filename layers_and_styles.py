@@ -120,7 +120,7 @@ def get_styles(ec, lw):
                 # 'fc': ec[layer],
                 'fill': None,
                 'lw': 0.2,
-                'hatch': '......',
+                'hatch': '....',
                 'zorder': -1
             }
 
@@ -130,7 +130,7 @@ def get_styles(ec, lw):
                 # 'fc': ec[layer],
                 'fill': None,
                 'lw': 0.4,
-                'hatch': '/////////',
+                'hatch': '/////',
                 'zorder': -2
             }
 
