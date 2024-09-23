@@ -1,6 +1,6 @@
 import streamlit as st
 import io
-from utils import create_pretty_map, save_plot
+from utils import create_pretty_map, save_plot, slugify_location
 from layers_and_styles import get_layers, get_default_colors, get_styles
 
 # Set up Streamlit interface
@@ -27,7 +27,7 @@ for key, value in DEFAULTS.items():
     st.session_state.setdefault(key, value)
 
 # Location and Radius input
-cols = st.columns([2, 1, 1]) if SHOW_COLOR_SCHEME_OPTION else st.columns([2, 1])
+cols = st.columns([2, 1]) if not SHOW_COLOR_SCHEME_OPTION else st.columns([2, 1, 1])
 
 with cols[0]:
     location = st.text_input("Location", st.session_state['location'])
@@ -95,6 +95,9 @@ if st.button("Generate Map"):
 if 'png_buffer' in st.session_state:
     st.image(st.session_state['png_buffer'])
 
+    # Slugify the location for file names
+    slugified_location = slugify_location(location)
+
     col1, col2 = st.columns(2)
     with col1:
         svg_buffer = save_plot(
@@ -105,7 +108,7 @@ if 'png_buffer' in st.session_state:
         st.download_button(
             label="Download SVG",
             data=svg_buffer,
-            file_name="map_output.svg",
+            file_name=f"{slugified_location}_map.svg",
             mime="image/svg+xml"
         )
     with col2:
@@ -118,6 +121,6 @@ if 'png_buffer' in st.session_state:
         st.download_button(
             label="Download PNG",
             data=png_buffer_download,
-            file_name="map_output.png",
+            file_name=f"{slugified_location}_map.png",
             mime="image/png"
         )
