@@ -7,8 +7,8 @@ shapely==2.0.1
 geopandas==0.13.2
 fonttools==4.40.0
 fiona==1.9.4
-pyproj==3.5.0
+# pyproj==3.5.0  # Commented out to avoid build issues
 rtree==1.0.1
 cachetools==5.3.1
-setuptools>=65.5.0  # Adding setuptools to resolve distutils issues
-wheel>=0.38.4       # Adding wheel to help build packages
+setuptools>=65.5.0
+wheel>=0.38.4
