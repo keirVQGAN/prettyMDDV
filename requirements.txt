@@ -10,4 +10,5 @@ fiona==1.9.4
 pyproj==3.5.0
 rtree==1.0.1
 cachetools==5.3.1
-setuptools==65.5.0  # Ensure setuptools is included for build systems
+setuptools>=65.5.0  # Adding setuptools to resolve distutils issues
+wheel>=0.38.4       # Adding wheel to help build packages
