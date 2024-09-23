@@ -10,7 +10,7 @@ st.title("Custom Map Generator")
 SHOW_LAYER_STYLE_OPTIONS = True
 SHOW_DILATE_OPTION = False
 SHOW_CIRCLE_OPTION = False
-SHOW_COLOR_SCHEME_OPTION = True
+SHOW_COLOR_SCHEME_OPTION = False
 
 # Initialize session state with default values
 DEFAULTS = {
