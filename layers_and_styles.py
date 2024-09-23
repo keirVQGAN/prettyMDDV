@@ -117,8 +117,8 @@ def get_styles(ec, lw):
         elif layer == 'waters':
             style[layer] = {
                 'ec': ec[layer],
-                'fc': ec[layer],
-                # 'fill': None,
+                # 'fc': ec[layer],
+                'fill': None,
                 'lw': 0.2,
                 # 'hatch': '......',
                 'zorder': -1
