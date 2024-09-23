@@ -1,18 +1,11 @@
-# Core dependencies
-streamlit==1.33.0  # Using the newer version as mentioned from the similar app
-matplotlib==3.8.4  # Compatible with osmnx and prettymaps
-numpy>=1.20,<1.25  # As specified in prettymaps
-shapely>=2.0.0     # As per prettymaps' requirements
-
-# Prettymaps and osmnx
-prettymaps==0.1.0  # Core prettymaps version
-osmnx==1.9.2       # Compatible with osmnx dependencies and pandas
-
-# Additional dependencies for osmnx and similar apps
-pandas==2.2.2      # osmnx subdependencies partially unpinned
-pyogrio==0.7.2     # Required for osmnx functionality
-streamlit-image-select==0.6.0  # From the similar app
-
-# Other build tools and utilities
+streamlit==1.33.0
+matplotlib==3.8.4
+numpy>=1.20,<1.25
+shapely>=2.0.0
+prettymaps==0.1.0
+osmnx==1.0.1  # Must stick to this version due to prettymaps dependency
+pandas==2.2.2
+pyogrio==0.7.2
+streamlit-image-select==0.6.0
 setuptools>=65.5.0
 wheel>=0.38.4
